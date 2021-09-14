@@ -11,5 +11,16 @@ Write a shell script that does the following:
 Hint: "../" goes back one directory
 
 Compilation Steps:  
-
+Make a directory using mkdir hw1q1; copy hw1q1 and rename copy as hw1q1_copy; create a blank file with touch f1.txt; move f1_copy.txt back one directory to hw1q1; copy f1.txt and rename copy to f1_copy2.txt; move f1_copy 2.txt back to hw1q1; move back a directory with cd ../; list directories with ls; move into hw1q1 with cd hw1q1; and list files in long format.
+cp -R hw1q1 hw1q1_copy
+cd hw1q1_copy
+touch f1.txt
+cp f1.txt f1_copy.txt
+mv f1_copy.txt ../hw1q1
+cp f1.txt f1_copy2.txt
+mv f1_copy2.txt ../hw1q1
+cd ../
+ls
+cd hw1q1
+ls -l
 Output:
